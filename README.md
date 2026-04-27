@@ -44,10 +44,10 @@ sudo nmcli connection modify normal-mode ipv4.method auto
 
 ---
 
-## 📁 Step 4: Create Project Structure
+## 📁 Step 4: git clone
 
 ```bash
-mkdir MODE
+git clone git@github.com:Safehalo/Mode.git
 ```
 
 Make scripts executable:

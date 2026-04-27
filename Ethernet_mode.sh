@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "🌐 Switching to NORMAL MODE..."
+echo "🌐 Switching to ETHERNET MODE..."
 
-nmcli connection up normal-mode
+nmcli connection up ethernet-mode
 
 # Disable forwarding permanently
 sed -i '/net.ipv4.ip_forward/d' /etc/sysctl.conf
@@ -21,4 +21,4 @@ iptables -P FORWARD ACCEPT
 # Save clean state
 netfilter-persistent save
 
-echo "✅ NORMAL MODE (NO ROUTING, DHCP MODE)"
+echo "✅ ETHERNET MODE (NO ROUTING, DHCP MODE)"

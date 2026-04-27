@@ -54,7 +54,7 @@ Make scripts executable:
 
 ```bash
 chmod +x camera_usb_mode.sh
-chmod +x eternet_mode.sh
+chmod +x Eternet_mode.sh
 ```
 
 ---
@@ -78,7 +78,7 @@ sudo ./camera_usb_mode.sh
 ### 🌐 Switch to Normal Mode
 
 ```bash
-sudo ./ethernet_mode.sh
+sudo ./Ethernet_mode.sh
 ```
 
 **Restores:**

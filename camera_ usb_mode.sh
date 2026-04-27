@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "📷 Switching to CAMERA MODE..."
+echo "📷 Switching to CAMERA USB MODE..."
 
-nmcli connection up camera-mode
+nmcli connection up camera-usb-mode
 
 # Enable forwarding permanently
 sed -i '/net.ipv4.ip_forward/d' /etc/sysctl.conf
@@ -23,4 +23,4 @@ iptables -A FORWARD -i usb0 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCE
 # Save permanently
 netfilter-persistent save
 
-echo "✅ CAMERA MODE (INTERNET SHARING ENABLED)"
+echo "✅ CAMERA USB MODE (INTERNET SHARING ENABLED)"

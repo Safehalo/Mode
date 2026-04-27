@@ -53,8 +53,8 @@ git clone git@github.com:Safehalo/Mode.git
 Make scripts executable:
 
 ```bash
-chmod +x camera_mode.sh
-chmod +x normal_mode.sh
+chmod +x camera_usb_mode.sh
+chmod +x eternet_mode.sh
 ```
 
 ---
@@ -64,7 +64,7 @@ chmod +x normal_mode.sh
 ### 📷 Switch to Camera Mode
 
 ```bash
-sudo ./camera_mode.sh
+sudo ./camera_usb_mode.sh
 ```
 
 **Enables:**
@@ -78,7 +78,7 @@ sudo ./camera_mode.sh
 ### 🌐 Switch to Normal Mode
 
 ```bash
-sudo ./normal_mode.sh
+sudo ./ethernet_mode.sh
 ```
 
 **Restores:**

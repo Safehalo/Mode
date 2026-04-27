@@ -31,15 +31,15 @@ sudo netfilter-persistent save
 ### 📷 Camera Mode (Static IP)
 
 ```bash
-sudo nmcli connection add type ethernet ifname eth0 con-name camera-mode ip4 192.168.0.1/24
+sudo nmcli connection add type ethernet ifname eth0 con-name camera-usb-mode ip4 192.168.0.1/24
 sudo nmcli connection modify camera-mode ipv4.method manual
 ```
 
 ### 🌐 Normal Mode (DHCP)
 
 ```bash
-sudo nmcli connection add type ethernet ifname eth0 con-name normal-mode
-sudo nmcli connection modify normal-mode ipv4.method auto
+sudo nmcli connection add type ethernet ifname eth0 con-name ethernet-mode
+sudo nmcli connection modify ethernet-mode ipv4.method auto
 ```
 
 ---

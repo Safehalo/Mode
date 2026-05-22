@@ -54,7 +54,7 @@ Make scripts executable:
 
 ```bash
 chmod +x camera_usb_mode.sh
-chmod +x Eternet_mode.sh
+chmod +x Ethernet_mode.sh
 ```
 
 ---
